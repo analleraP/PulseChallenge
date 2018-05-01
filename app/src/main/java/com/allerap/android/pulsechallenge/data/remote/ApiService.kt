@@ -1,5 +1,6 @@
 package com.allerap.android.pulsechallenge.data.remote
 
+import com.allerap.android.pulsechallenge.data.entities.Content
 import com.allerap.android.pulsechallenge.data.entities.ContentList
 import com.allerap.android.pulsechallenge.data.entities.Item
 import retrofit2.Call
@@ -12,5 +13,5 @@ interface ApiService {
     fun getItems(): Call<ContentList>
 
     @GET("/test/native/content/{id}.json")
-    fun getItem(@Path("id") id: Int): Call<Item>
+    fun getItem(@Path("id") id: Int): Call<Content>
 }
