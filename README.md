@@ -1,4 +1,4 @@
-## Map Challenge
+## Pulse Live Challenge
 
 ### How it's been done:
 
@@ -14,14 +14,7 @@ Based on Clean Architecture, divided into three layers:
 
 #### Libraries
 * coroutines (asynchronous programming)
-* google maps
-* fresco (remote image loading)
 * retrofit (http client)
-* moshi (JSON parser)
-* dagger (dependency injection)
+
 
 ### Possible improvements
-* Improve user permissions request
-* Error handling
-* More test!!
-* Loading state
