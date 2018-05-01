@@ -1,6 +1,7 @@
 package com.allerap.android.pulsechallenge.domain
 
 import com.allerap.android.pulsechallenge.data.entities.Item
+import com.allerap.android.pulsechallenge.data.entities.Error
 import com.allerap.android.pulsechallenge.data.remote.ApiRemoteSource
 import com.allerap.android.pulsechallenge.data.result.Result
 

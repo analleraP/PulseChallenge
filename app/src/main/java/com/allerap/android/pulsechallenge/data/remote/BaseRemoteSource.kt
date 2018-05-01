@@ -6,8 +6,9 @@ import java.io.IOException
 import com.allerap.android.pulsechallenge.data.result.Err
 import com.allerap.android.pulsechallenge.data.result.Ok
 import com.allerap.android.pulsechallenge.data.result.Result
+import com.allerap.android.pulsechallenge.data.entities.Error
 
-open class BaseRemoteSource() {
+open class BaseRemoteSource {
 
     internal fun <T> call(call: Call<T>): Result<T, Error> = try {
 
