@@ -10,11 +10,11 @@ Based on Clean Architecture, divided into three layers:
 
 * Data, with a remote data source
 * Domain, for business model and repository.
-* Feature, with Model-View-Presenter, + Interactor for use cases and Navigator for navigation.
+* Feature, with Model-View-Presenter, + Interactor for use cases + Navigator for navigation.
 
-#### Libraries
-* coroutines (asynchronous programming)
-* retrofit (http client)
+### Possible improvements (Not implemented due to challenge libraries restrictions)
+* Use dagger for dependency injection
+* Add tests to every layer (need mockwebserver, roboelectric, mockito)
 
-
-### Possible improvements
+### Time spent
+3 hours
