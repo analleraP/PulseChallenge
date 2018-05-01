@@ -4,7 +4,6 @@ import com.allerap.android.pulsechallenge.BuildConfig
 import com.allerap.android.pulsechallenge.data.remote.ApiRemoteSource
 import com.allerap.android.pulsechallenge.data.remote.ApiService
 import okhttp3.OkHttpClient
-import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 
@@ -21,12 +20,7 @@ object BusinessModule {
     private fun getRepository(remoteSource: ApiRemoteSource): Repository = Repository(remoteSource)
 
     private fun okHttpClient(): OkHttpClient =
-            OkHttpClient.Builder()
-                    .addInterceptor(HttpLoggingInterceptor().apply {
-                        level = if (BuildConfig.DEBUG) HttpLoggingInterceptor.Level.BODY
-                        else HttpLoggingInterceptor.Level.NONE
-                    })
-                    .build()
+            OkHttpClient.Builder().build()
 
     private fun retrofitClient(okHttpClient: OkHttpClient, baseUrl: String): Retrofit =
             Retrofit.Builder()
